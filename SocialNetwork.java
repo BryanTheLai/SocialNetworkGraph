@@ -72,7 +72,8 @@ public class SocialNetwork {
     // Convert the network to a Graphviz representation
     public String toGraphviz() {
         StringBuilder graphvizBuilder = new StringBuilder();
-        graphvizBuilder.append("graph theConnections {\n");
+        graphvizBuilder.append("Copy and paste the code into : dreampuf.github.io/GraphvizOnline \n\ngraph theConnections {\n");
+        
 
         HashSet<String> addedEdges = new HashSet<>(); // Sets cannot contain duplicates
 
@@ -103,7 +104,7 @@ public class SocialNetwork {
         return graphvizBuilder.toString();
     }
     
-    public List<String> findPath(String start, String end) {
+    public List<String> findPath(String start, String end) { // bfs
         List<String> path = new ArrayList<>();
         if (!connections.containsKey(start) || !connections.containsKey(end)) {
             System.out.println("One or both users not found.");

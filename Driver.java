@@ -109,7 +109,7 @@ public class Driver {
         System.out.println("\n===== Main Menu =====");
         System.out.println("1. Create Graph");
         System.out.println("2. Search for a Person's Social Network");
-        System.out.println("3. View the Social Network");
+        System.out.println("3. Visualize the Social Network");
         System.out.println("4. View all Social Network Nodes");
         System.out.println("5. Find Path from Node to Node");
         System.out.println("0. Exit");
