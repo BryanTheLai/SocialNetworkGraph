@@ -10,7 +10,7 @@
 
 ![alt text](https://github.com/BryanTheLai/SocialNetworkGraph/blob/main/Images/bfs.png?raw=true)
 
-> Pseudocode
+## Pseudocode
  ```
 BFS(graph, startNode):
     // Create an empty queue and mark startNode as visited
