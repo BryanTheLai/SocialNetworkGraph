@@ -56,9 +56,23 @@ public class SocialNetwork {
 
     // Delete an edge between two vertices (users)
     public void deleteEdge(String name1, String name2) {
-        connections.get(name1).remove(name2);
-        connections.get(name2).remove(name1);
+        if (!connections.containsKey(name1) || !connections.containsKey(name2)) {
+            System.out.println("One or both users not found.");
+            return; // Exit the function if one or both users are not found
+        }
+
+        List<String> connections1 = connections.get(name1);
+        List<String> connections2 = connections.get(name2);
+
+        if (connections1 == null || connections2 == null) {
+            System.out.println("One or both users have no connections.");
+            return; // Exit the function if one or both users have no connections
+        }
+
+        connections1.remove(name2);
+        connections2.remove(name1);
     }
+
 
     // Delete a Node (user) from the network
     public void deleteNode(String name) {
