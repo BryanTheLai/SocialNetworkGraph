@@ -50,9 +50,23 @@ public class SocialNetwork {
 
     // Connect two vertices (users) with an edge
     public void edgeConnect(String name1, String name2) {
-        connections.get(name1).add(name2);
-        connections.get(name2).add(name1);
+        if (!connections.containsKey(name1) || !connections.containsKey(name2)) {
+            System.out.println("One or both users not found.");
+            return; // Exit the function if one or both users are not found
+        }
+
+        List<String> connections1 = connections.get(name1);
+        List<String> connections2 = connections.get(name2);
+
+        if (connections1 == null || connections2 == null) {
+            System.out.println("One or both users have no connections.");
+            return; // Exit the function if one or both users have no connections
+        }
+
+        connections1.add(name2);
+        connections2.add(name1);
     }
+
 
     // Delete an edge between two vertices (users)
     public void deleteEdge(String name1, String name2) {
@@ -76,12 +90,24 @@ public class SocialNetwork {
 
     // Delete a Node (user) from the network
     public void deleteNode(String name) {
-        List<String> connectionsToRemove = connections.get(name);
-        for (String connection : connectionsToRemove) {
-            connections.get(connection).remove(name);
+        if (!connections.containsKey(name)) {
+            System.out.println("User not found: " + name);
+            return; // Exit the function if the user is not found
         }
+
+        List<String> connectionsToRemove = connections.get(name);
+        if (connectionsToRemove != null) {
+            for (String connection : connectionsToRemove) {
+                List<String> connectionList = connections.get(connection);
+                if (connectionList != null) {
+                    connectionList.remove(name);
+                }
+            }
+        }
+
         connections.remove(name);
     }
+
 
     // Convert the network to a Graphviz representation
     public String toGraphviz() {
