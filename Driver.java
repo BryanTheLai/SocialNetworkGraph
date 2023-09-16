@@ -158,6 +158,67 @@ public class Driver {
         socialNetwork.edgeConnect("Eve", "Grace");
         socialNetwork.edgeConnect("Frank", "Grace");
 
+        /*
+ // Adding nodes
+        socialNetwork.makeNode("Alice");
+        socialNetwork.makeNode("Bob");
+        socialNetwork.makeNode("Charlie");
+        socialNetwork.makeNode("David");
+        socialNetwork.makeNode("Eve");
+        socialNetwork.makeNode("Frank");
+        socialNetwork.makeNode("Grace");
+        socialNetwork.makeNode("Hannah");
+        socialNetwork.makeNode("Isaac");
+        socialNetwork.makeNode("Jack");
+        socialNetwork.makeNode("Kelly");
+        socialNetwork.makeNode("Liam");
+        socialNetwork.makeNode("Mia");
+        socialNetwork.makeNode("Nora");
+        socialNetwork.makeNode("Oliver");
+        socialNetwork.makeNode("Paul");
+        socialNetwork.makeNode("Quinn");
+        socialNetwork.makeNode("Riley");
+        socialNetwork.makeNode("Sarah");
+        socialNetwork.makeNode("Tom");
+
+        // Adding connections
+        socialNetwork.edgeConnect("Alice", "Bob");
+        socialNetwork.edgeConnect("Alice", "Charlie");
+        socialNetwork.edgeConnect("Alice", "David");
+        socialNetwork.edgeConnect("Bob", "Charlie");
+        socialNetwork.edgeConnect("Bob", "Eve");
+        socialNetwork.edgeConnect("Charlie", "David");
+        socialNetwork.edgeConnect("David", "Eve");
+        socialNetwork.edgeConnect("Eve", "Frank");
+        socialNetwork.edgeConnect("Eve", "Grace");
+        socialNetwork.edgeConnect("Frank", "Grace");
+        socialNetwork.edgeConnect("Grace", "Hannah");
+        socialNetwork.edgeConnect("Hannah", "Isaac");
+        socialNetwork.edgeConnect("Isaac", "Jack");
+        socialNetwork.edgeConnect("Isaac", "Kelly");
+        socialNetwork.edgeConnect("Jack", "Kelly");
+        socialNetwork.edgeConnect("Kelly", "Liam");
+        socialNetwork.edgeConnect("Liam", "Mia");
+        socialNetwork.edgeConnect("Liam", "Nora");
+        socialNetwork.edgeConnect("Mia", "Nora");
+        socialNetwork.edgeConnect("Mia", "Alice");
+        socialNetwork.edgeConnect("Mia", "Grace");
+        socialNetwork.edgeConnect("Mia", "Oliver");
+        socialNetwork.edgeConnect("Mia", "Charlie");
+        socialNetwork.edgeConnect("Paul", "Charlie");
+        socialNetwork.edgeConnect("Mia", "Tom");
+        socialNetwork.edgeConnect("Riley", "Sarah");
+        socialNetwork.edgeConnect("Mia", "Quinn");
+        socialNetwork.edgeConnect("Bob", "David");
+        socialNetwork.edgeConnect("Alice", "Oliver");
+        socialNetwork.edgeConnect("Frank", "Liam");
+        socialNetwork.edgeConnect("Kelly", "Quinn");
+        socialNetwork.edgeConnect("Hannah", "Eve");
+        socialNetwork.edgeConnect("Charlie", "Grace");
+        socialNetwork.edgeConnect("Mia", "Paul");
+        socialNetwork.edgeConnect("Isaac", "Kelly");
+        */
+
     }
 
 }
