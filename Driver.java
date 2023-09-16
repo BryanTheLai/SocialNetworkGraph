@@ -139,6 +139,7 @@ public class Driver {
         System.out.println("5. Return to Main Menu");
     }
     private static void defaultNodes(SocialNetwork socialNetwork) {
+        // 1. Less People Version
         // Adding nodes
         socialNetwork.makeNode("Alice");
         socialNetwork.makeNode("Bob");
@@ -159,7 +160,8 @@ public class Driver {
         socialNetwork.edgeConnect("Frank", "Grace");
 
         /*
- // Adding nodes
+        // 2. More People Version
+        // Adding nodes
         socialNetwork.makeNode("Alice");
         socialNetwork.makeNode("Bob");
         socialNetwork.makeNode("Charlie");
