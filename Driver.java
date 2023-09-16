@@ -157,7 +157,7 @@ public class Driver {
         socialNetwork.edgeConnect("Eve", "Frank");
         socialNetwork.edgeConnect("Eve", "Grace");
         socialNetwork.edgeConnect("Frank", "Grace");
-        so
+
     }
 
 }
