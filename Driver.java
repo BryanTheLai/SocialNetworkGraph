@@ -106,7 +106,7 @@ public class Driver {
     }
 
     private static void displayMainMenu() {
-        System.out.println("\n===== Main Menu =====");
+        System.out.println("\n===== Social Network Application =====");
         System.out.println("1. Create Graph");
         System.out.println("2. Search for a Person's Social Network");
         System.out.println("3. Visualize the Social Network");
@@ -131,7 +131,7 @@ public class Driver {
     }
 
     private static void displayCreateGraphMenu() {
-        System.out.println("\n===== Create Graph Menu =====");
+        System.out.println("\n===== Create Graph =====");
         System.out.println("1. Add a Node");
         System.out.println("2. Remove a Node");
         System.out.println("3. Add an Edge");
