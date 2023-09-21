@@ -131,7 +131,7 @@ public class Driver {
     }
 
     private static void displayCreateGraphMenu() {
-        System.out.println("\n===== Create Graph =====");
+        System.out.println("\n===== Create Graph Menu =====");
         System.out.println("1. Add a Node");
         System.out.println("2. Remove a Node");
         System.out.println("3. Add an Edge");
